@@ -6,7 +6,7 @@ import 'package:shop_ecommerce/feature/home/presentation/manager/get_product_cub
 class GetProductCubit extends Cubit<GetProductState> {
   final GetProductRepo getProductRepo;
   GetProductCubit(this.getProductRepo) : super(GetProductInitState());
- static GetProductCubit get(context)=> BlocProvider.of(context);
+  static GetProductCubit get(context) => BlocProvider.of(context);
 
   List<ProductModel> _allProducts = [];
 
@@ -22,12 +22,11 @@ class GetProductCubit extends Cubit<GetProductState> {
     );
   }
 
-  // في GetProductCubit.dart
-void filterProductsByCategory(int categoryId) {
-  final filtered = _allProducts.where((p) =>
-    p.categoryModel != null && p.categoryModel!.id == categoryId
-  ).toList();
-  print(filtered);
-  emit(GetProductSuccessState(products: filtered));
-}
+  void filterProductsByCategory(int categoryId) {
+    final filtered = _allProducts
+        .where(
+            (p) => p.categoryModel != null && p.categoryModel!.id == categoryId)
+        .toList();
+    emit(GetProductSuccessState(products: filtered));
+  }
 }

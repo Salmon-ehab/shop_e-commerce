@@ -23,7 +23,7 @@ class SplashCubit extends Cubit<void> {
         } else {
           MyNavigator.goTo(screen: () => const SignInView(), isReplace: true);
         }
-      } else // first time
+      } else
       {
         MyNavigator.goTo(screen: () => const OnboardingView(), isReplace: true);
       }

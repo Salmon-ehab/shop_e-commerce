@@ -44,18 +44,14 @@ class HeartIconWidget extends StatelessWidget {
           final AddToFavoritCubit addToFavoriteCubit =
               AddToFavoritCubit.get(context);
 
-          // هنا نعتمد مباشرة على `isFavorite` من `productModel` الذي تم تمريره
-          // هذا الحقل سيتم تحديثه عندما يتم تحديث بيانات المنتج الكلية
-          // (إما بجلب كل المنتجات من جديد أو جلب بيانات المستخدم المحدثة)
-          final bool isCurrentlyFavorite = productModel.isFavorite ?? false;
+          bool isCurrentlyFavorite = productModel.isFavorite ?? false;
 
           return InkWell(
             onTap: () {
-              // إذا لم يكن مفضلاً بالفعل (القلب أبيض)، قم بالإضافة فقط
               if (!isCurrentlyFavorite) {
                 addToFavoriteCubit.addToFavorite(productModel.id!);
+                isCurrentlyFavorite = true;
               }
-              // لو هو مفضل بالفعل (القلب أحمر)، لا تفعل شيئًا (لن يتم إزالته)
             },
             child: Container(
               width: 37,

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:shop_ecommerce/core/widgets/image_manager/cubit/image_manager_state.dart';
+import 'package:shop_ecommerce/feature/profile/presentation/manager/image_manager/image_manager_state.dart';
 
 class ImageManagerCubit extends Cubit<ImageManagerState> {
   ImageManagerCubit() : super(ImageManagerInitState());

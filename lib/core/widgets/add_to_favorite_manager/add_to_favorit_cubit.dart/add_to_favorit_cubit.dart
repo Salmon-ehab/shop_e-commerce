@@ -10,18 +10,15 @@ class AddToFavoritCubit extends Cubit<AddToFavoriteState> {
 
   static AddToFavoritCubit get(context) => BlocProvider.of(context);
 
-  // هذه الدالة وظيفتها فقط إرسال طلب الإضافة للمفضلة للـ API
-  // لن يكون هناك أي منطق محلي هنا لتتبع المفضلة
   void addToFavorite(int productId) async {
     emit(AddToFavoritLoadingState());
 
-    final result = await addToFavoriteRepoImple.addToFavorite(productId: productId);
+    final result =
+        await addToFavoriteRepoImple.addToFavorite(productId: productId);
 
     result.fold((error) {
       emit(AddToFavoritFailureState(error: error.message));
     }, (response) {
-      // فقط قم بإصدار حالة النجاح
-      // تحديث واجهة المستخدم سيتم عن طريق إعادة جلب بيانات المستخدم من AuthCubit
       emit(AddToFavoritSuccessState(responseModel: response));
     });
   }

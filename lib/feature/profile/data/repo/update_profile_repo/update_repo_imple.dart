@@ -6,7 +6,7 @@ import 'package:shop_ecommerce/core/errors/failure.dart';
 import 'package:shop_ecommerce/core/models/response_model.dart';
 import 'package:shop_ecommerce/core/network/api_consumer.dart';
 import 'package:shop_ecommerce/core/network/end_points.dart';
-import 'package:shop_ecommerce/feature/profile/data/repo/update_profilr_repo/update_repo.dart';
+import 'package:shop_ecommerce/feature/profile/data/repo/update_profile_repo/update_repo.dart';
 
 class UpdateRepoImple implements UpdateRepo {
   final ApiConsumer apiConsumer;

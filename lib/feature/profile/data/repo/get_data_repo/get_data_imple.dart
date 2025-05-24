@@ -21,10 +21,10 @@ class GetDataRepoImple implements GetDataRepo {
         if (userResponseApi.user != null) {
           return Right(userResponseApi.user!);
         } else {
-          throw Exception("Login Failed\nTry Again later");
+          throw Exception("An error occured");
         }
       } else {
-        throw Exception("Login Failed\nTry Again later");
+        throw Exception("An error occured");
       }
     } on DioException catch (e) {
       final error = AppException.fromDio(e);
