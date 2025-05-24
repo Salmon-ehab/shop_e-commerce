@@ -1,0 +1,2 @@
+C:/Users/salma/StudioProjects/shop_ecommerce/android/app/.cxx/RelWithDebInfo/3q405q47/x86/CMakeFiles/edit_cache.dir
+C:/Users/salma/StudioProjects/shop_ecommerce/android/app/.cxx/RelWithDebInfo/3q405q47/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\Users\\salma\\.shorebird\\bin\\cache\\flutter\\fb8d194ceb0794310387baff34d657edad7219b8\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\salma\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\salma\\StudioProjects\\shop_ecommerce\\android\\app\\.cxx\\RelWithDebInfo\\3q405q47\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\salma\\AppData\\Local\\Android\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\salma\\StudioProjects\\shop_ecommerce\\android\\app\\.cxx\\RelWithDebInfo\\3q405q47\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
